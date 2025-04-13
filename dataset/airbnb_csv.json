@@ -1,0 +1,87 @@
+{
+	"name": "airbnb_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "airbnb",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "datos"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "filtered_airbnb.csv",
+				"container": "airbnb"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "Price",
+				"type": "String"
+			},
+			{
+				"name": "Day",
+				"type": "String"
+			},
+			{
+				"name": "Room Type",
+				"type": "String"
+			},
+			{
+				"name": "Person Capacity",
+				"type": "String"
+			},
+			{
+				"name": "Superhost",
+				"type": "String"
+			},
+			{
+				"name": "Multiple Rooms",
+				"type": "String"
+			},
+			{
+				"name": "Business",
+				"type": "String"
+			},
+			{
+				"name": "Cleanliness Rating",
+				"type": "String"
+			},
+			{
+				"name": "Guest Satisfaction",
+				"type": "String"
+			},
+			{
+				"name": "Bedrooms",
+				"type": "String"
+			},
+			{
+				"name": "City Center (km)",
+				"type": "String"
+			},
+			{
+				"name": "Metro Distance (km)",
+				"type": "String"
+			},
+			{
+				"name": "Attraction Index",
+				"type": "String"
+			},
+			{
+				"name": "Restraunt Index",
+				"type": "String"
+			}
+		]
+	}
+}
